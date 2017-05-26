@@ -1,0 +1,36 @@
+.carDetails_block
+{
+  display: flex;
+}
+.carDetails__picture {
+  flex:1;
+  width: 100%;
+}
+.carDetails__info{
+  padding:5%;
+  flex:1;
+}
+.carDetails__wrapper > h2{
+  justify-content: center;
+  text-align: center;
+}
+.carDetails__info--specs{
+  padding-top:0px;
+}
+.carDetails_back > button{
+  font-size: 50px;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+}
+@media (max-width: 1200px) {
+  .carDetails__picture{
+    flex:1;
+  }
+  .carDetails_info{
+    padding:0;
+  }
+  .carDetails_block{
+    display: inherit;
+  }
+}

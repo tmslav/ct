@@ -1,0 +1,19 @@
+<div>
+    <ul class="carsOffers">
+      <li *ngFor="let car of cars">
+        <div class="carsOffers__item carsOffers__item--hover">
+          <div>
+            <a [routerLink]="['/detail',car.id]">
+            <img class="carsOffers__Image" src="/assets/{{car.img}}" />
+          </a>
+          <div class="carsOffers__Name">
+            {{car.name}}
+          </div>
+          </div>
+          <div class="carsOffers__price">
+            <span class="carsOffers__price_text">Price: </span>{{car.price}} Kn
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>

@@ -1,0 +1,65 @@
+.carsOffers{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  margin:0;
+  padding: 0;
+}
+.carsOffers__row{
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  width: 30%;
+}
+.carsOffers__Image{
+  max-width: 350px;
+  min-width: 350px;
+  max-height: 192px;
+}
+.carsOffers__item{
+  opacity: 0.9;
+  border-bottom: 1px solid green;
+  border-top: 1px solid green;
+  border-radius:15%;
+  margin:5%;
+}
+.carsOffers__price{
+  color: green;
+  font-family:monospace;
+  letter-spacing: 1px;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom:5px;
+}
+.carsOffers__price_text{
+  color:white;
+}
+.carsOffers__Name{
+  font-size:18px;
+  font-family: monospace;
+  text-align: center;
+}
+.carsOffers__item--hover{
+   transition: all .5s ease-in-out;
+}
+.carsOffers__item--hover:hover {
+  transform: scale(1.1);
+  -moz-box-shadow:    inset 0 0 13px white;
+  -webkit-box-shadow: inset 0 0 13px white;
+  box-shadow:         inset 0 0 13px white;
+  border:none;
+  opacity:1;
+}
+
+@media (max-width: 1000px) {
+  .carsOffers{
+    display:no-wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .carsOffers__Image{
+    max-height: 100%%;
+    max-width: 700px;
+  }
+}
